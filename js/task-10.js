@@ -21,7 +21,7 @@ const createBoxes = (amount) => {
   for (let i = 1; i <= amount; i++) {
     numberOfBoxes.push(i);
   }
-  console.log(numberOfBoxes);
+
   for (let number of numberOfBoxes) {
     const divBox = document.createElement("div");
     boxesCollection.append(divBox);
@@ -40,4 +40,5 @@ destroyBtn.addEventListener("click", () => {
 
 const destroyBoxes = () => {
   boxesCollection.innerHTML = "";
+  numberOfBoxes = [];
 };
